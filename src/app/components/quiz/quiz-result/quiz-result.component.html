@@ -1,0 +1,41 @@
+<div class="pb-3">
+    <div class="container shadow rounded in-bg mt-5 mb-5 pb-2">
+      <div class="p-3 d-flex justify-content-center">
+        <h3 class="animate-words title-style">Result</h3>
+      </div>
+      <div class="p-3 d-flex justify-content-center">
+        <h5>Your score :</h5>
+        <h5 class="animate-words title-style">{{ percentage }} %</h5>
+      </div>
+      <div
+        class="mb-2 ml-2 card shadow rounded p-2"
+        *ngFor="let result of results; let i = index"
+      >
+        <h6>{{ i + 1 }}.{{ convert(result.question) }}</h6>
+        <div class="p-4">
+          <div class="row">
+            <div class="col-sm-6 col-md-4 p-2">
+              Currect answer : &nbsp;
+              <h6>{{ convert(result.correctAnswer) }}</h6>
+            </div>
+            <div class="col-sm-6 col-md-4 p-2">
+              Your answer : &nbsp;
+              <h6
+                *ngIf="result.selectedAnswer === result.correctAnswer"
+                class="ans-true"
+              >
+                {{ convert(result.selectedAnswer) }}
+              </h6>
+              <h6
+                *ngIf="result.selectedAnswer != result.correctAnswer"
+                class="ans-false"
+              >
+                {{ convert(result.selectedAnswer) }}
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

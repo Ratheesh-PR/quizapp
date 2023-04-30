@@ -1,0 +1,5 @@
+.my-select:read-only {
+    pointer-events: none;
+    background-color: lightgray;
+    color: gray;
+  }

@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+.btn-style {
+    border-radius: 10px;
+    background-color: #14ebcb;
+    border: none;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3),
+      -2px -2px 8px rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+  }
+  .btn-style:hover {
+    transform: scale(1.1) translate(2px, 2px); /* scale and translate on hover */
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5),
+      -4px -4px 12px rgba(255, 255, 255, 0.5); /* increase projection on hover */
+    background-color: #49dfc8;
+  }
+  .link-style {
+    color: #17b3a7;
+    /* color: #14ebcb; */
+  }
+  .link-style:hover {
+    color: #0d8774;
+  }
+  input[type="checkbox"] {
+    accent-color: #17b3a7;
+    color: white;
+  }
+  .login-text {
+    font-weight: 500;
+  }
+  .title-style {
+    color: #14ebcb;
+    text-shadow: 2px 2px 2px #5e5656;
+  }
+  .close-btn {
+    background: none;
+    border: 0;
+  }
+  .close-btn span {
+    font-size: 2rem;
+  }
+  html,
+  body {
+    height: 100%;
+  }
+  body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+  }
+  
